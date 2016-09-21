@@ -1,5 +1,13 @@
 # design pattern of gof 23
 
+## Index
+
+- 1 pattern 23
+- 2
+
+
+## pattern 23
+
 ・Factory Method	- new in the class
 
 ・abstruct Factory - 
@@ -26,7 +34,9 @@
 
 ・Interpreter - interpreter
 
+
 ・Template Method - template
+
 
 ・Chain of Responsibility
 
@@ -51,7 +61,10 @@
 
 --------------------------------
 
+## 2 memo
+
 entry case : what design pattern select?
+
 
 
 --- itarator --------------------------
