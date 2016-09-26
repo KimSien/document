@@ -1,13 +1,39 @@
-# java ee memo
+----------------------
+**********************
+
+# ! attention
+
+[わかりやすいJavaEE ウェブシステム入門](http://k-webs.jp/JavaEE/index.html)
+
+use error netbeans 8.1
+
+・2016年4月現在のお知らせです。GlassFish4.1＋NetBeans8.02 を使いましょう！
+
+
+**********************
+----------------------
+
+# the first lerning java and java ee.
 
 java ee is java set that is include business logic.
+
+current select java flamework trend.
+
+- java ee
+- spring
+- play
 
 -----------------
 ## Index
 
+
+
+
 - point
 - select server
 - for eclipse setup enviroment.
+
+
 
 -----------------
 
@@ -38,14 +64,17 @@ this is standard. example browser to reprodauce the html standard(?)
 
 
 
+-----------------
 
+[java ee 30 minite](http://www.mushagaeshi.com/2014/12/23/faster-java-ee-7-app-making-2015-java-ee-advent-calendar-2014/)
 
+これひどすぎるわ。
 
+[EclipseLink error について](http://qiita.com/mmatsuoka@github/items/14b798244ef61b50f697)
 
+カオス
 
-
-
-
+[サーバー追加しなおしについて](http://kikutaro777.hatenablog.com/entry/2014/09/15/165819)
 
 
 
