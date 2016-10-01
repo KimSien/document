@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:jsf="http://xmlns.jcp.org/jsf">
+    <head>
+        <title>Facelet Title</title>
+    </head>
+    <body>
+        Hello from Facelets
+        
+        <form jsf:id="form">
+            <p>name <input type="text" jsf:value="#{indexBean.name}"/></p>
+            <p>postalcode <input type="text" jsf:value="#{indexBean.postalCode}"/> </p>
+            <p>address <input type="text" jsf:value="#{indexBean.address}"/></p>
+            <p>phone <input type="text" jsf:value="#{indexBean.phone}"/></p>
+            <p>note <input type="text" jsf:value="#{indexBean.note}"/></p>
+            <input type="submit" value="Register!"
+                   jsf:action="#{indexBean.registerInfomation()}"/>
+
+        </form>
+        
+    </body>
+</html>
+
