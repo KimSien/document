@@ -4,6 +4,9 @@
 
 osi layer
 
+osi - open system interconnection
+
+
 ------------------------
 # story of network
 
