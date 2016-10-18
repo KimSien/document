@@ -1,11 +1,41 @@
 # database
 
-check the imaging.
 
+
+# Index
+
+----------------------------
+# exam of sql
+
+- setup enviroment(for win,mac,linux)
+- used sqldatabase of mysql
+- for question.
+
+
+----------------------------
+
+- current database model. sql model & no-sql model
+
+	using sql model -> mysql,postsql
+	using no-sql -> redis,memchash, cassandra,mongoDB
+
+	simple presentation sql & no-sql deferrence
+
+	sql is table
+	no-sql is json
+
+
+
+- check the imaging.
+
+groupe
 subquery
 function
 foreigun key
+window function?(not support this mysql)
 +
+
+
 
 
 --------------------
@@ -35,6 +65,8 @@ select column_name1,column?name2 from tabel_name where column_name1_find_conditi
 
 [foreigun key](http://www.dbonline.jp/mysql/table/index11.html)
 
+
+----------------------------
 
 
 
