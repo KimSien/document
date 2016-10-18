@@ -1,37 +1,62 @@
-# php memo
+# php target stage1 bbs to txt
 
-[micro engine mail form](http://microengine.jp/mailform/)
-
-------------------------
+- reference
 
 [live cording php for bbs](http://qiita.com/mpyw/items/2c54d0ea95423bd88f60)
 
-step1
+- time limit
+
+15 minitu
+
+- require skill
+
+stage 1
+
+- enviroment
+
+php v5.4 ~
+permission folder & text
+
+------------------------
+## modify terms
+
+- accept used manual,reference.
+- 
+
+------------------------
+## step0 developer toole and enviroment(release stage)
+
+problem
+- win,mac,linux deference tools & server.
+
+------------------------
+## step1 
+
+	view cording for html with emmet
+
 
 index.html
 html:5>h1{掲示板}+section>form>{名前：}input[type=text][name=names][value]+{本文:}input[type=text][name=text][value]^section>h2{投稿一覧}+p{投稿はまだありません。}
 
 
-step2
 
-model create
+------------------------
+## step2
 
+	cording php.
 
-
-1 table
-
-
-
-step3 
-
-implements rest api class
+problem
+- php method require typing. (support tool for sublime? other?)
+- 
 
 
-step3
-
-controller
 
 
+
+
+
+------------------------
+memo
 
 --------------
 
