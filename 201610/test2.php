@@ -11,6 +11,7 @@ ini_set("display_errors",1);
 </head>
 <body>
 	<h1>title</h1>
+
 	<form action="" method="post">
 		<input type="text" name="title">
 		<input type="text" name="contents">
@@ -37,12 +38,12 @@ $buffer = "";
 $fp = fopen($filename,"rb");
 
 	if($fp){
-		if(flock($fp,LOCK_SH){
+		if(flock($fp,LOCK_SH)){
 
 			while(!feof($fp)){
 			$buffer .= fget($fp);
 			}
-		flock($fp,LOCK_UN)
+		flock($fp,LOCK_UN);
 
 		}else{
 			//error

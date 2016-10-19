@@ -1,5 +1,8 @@
 # bbs stage 1
 
+stage bbs --------------------------
+test
+
 ----------------------
 
 - used tool
@@ -8,9 +11,13 @@ html - sublimetext
 css - 
 php - eclipse(1mbupper) or netbeans(request jdk8) or sublime+plugin(+node)
 
+current best editor is vs + php format code(Ctrl+D)
+
 ----------------------
 
 [live cording php for bbs](http://qiita.com/mpyw/items/2c54d0ea95423bd88f60)
+
+
 
 
 ---------------------------
