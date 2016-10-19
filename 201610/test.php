@@ -2,7 +2,7 @@
 ini_set("display_errors",1);
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="jp">
 <title>post test</title>
 <head>
 	<meta charset="UTF-8">
