@@ -34,17 +34,22 @@ echo readingtext();
 function readingtext(){
 
 $buffer = "";
-$fp = fopen($filename,"rb";
+$fp = fopen($filename,"rb");
 
-	if(flock($fp,LOCK_SU){
+	if($fp){
+		if(flock($fp,LOCK_SH){
 
-		if(foof($fp)===""){
-		$buffer .= fget($fp);
+			while(!feof($fp)){
+			$buffer .= fget($fp);
+			}
+		flock($fp,LOCK_UN)
+
+		}else{
+			//error
 		}
-
 	}
-	flock($fp,LOCK_UN)
-
+	
+fclose($filename);
 return $buffer;
 }
 
@@ -61,7 +66,7 @@ function getpostdata(){
 * return mixed true and false
 */
 function writingtext($post){
-
+$mixed = false;
 $title=$post["title"];
 $contents = $post["contents"];
 
@@ -69,19 +74,21 @@ $savetext = "<hr><p>"+$title + $contents + "</p>";
 
 $fp = fopen($filename,"ab");
 	
-	if(flock($fp,LOCK_SU)){
+	if($fp){
+		if(flock($fp,LOCK_EX)){
 
-		if($fput){
+			if(fwrite($fp,$savetext)=== FALSE){
+			flock($fp,LOCK_UN);
+			$mixed = true;
+			}else{
+			//error
+			}
 
-		}else{
-		//error
 		}
-
 	}
 
-	flock($fp,LOCK_UN);
-
-
+fclose($filename);
+return $mixed;
 }
 
 ?>
