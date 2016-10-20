@@ -41,7 +41,6 @@ request and responce
 - orm
 
 
-
 ## used flamework
 
 - laravel
@@ -51,6 +50,16 @@ request and responce
 
 - wordpress
 - ec cube
+
+## argorithm
+
+[sort of 7 basic programing](http://kojikoji75.hatenablog.com/entry/2013/09/21/115937)
+
+
+## design pattern
+
+[php design pattern](http://d.hatena.ne.jp/shimooka/touch/20141211/1418298136)
+
 
 
 

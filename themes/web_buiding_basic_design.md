@@ -28,7 +28,7 @@
 
 - html -> used html5
 - css -> css3
-- js -> 
+- js -> altjs? es2015
 - jquery -> ver 3.0
 
 - ogp
