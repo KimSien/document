@@ -1,5 +1,6 @@
 # web building basic design
 
+ウェブ制作の仕様書
 
 ## Index
 - target customer
@@ -8,14 +9,16 @@
 - base technology
 
 
-## target customer
-- page view level
+## target customer / 対象となる顧客、ユーザー
+
+- page view level / ページビュー、アクセスレベル
 
 
 
-## target browser
+## target browser /　対応するブラウザ
+
 - ie ver9 upper
-- chrome
+- chrome,firefox,
 - 
 
 ## request develop spec & status
@@ -26,15 +29,28 @@
 
 ## base technology
 
-- html -> used html5
+- php -> ver7
+- wordpress -> stable,latest version
+
+- html -> html5
 - css -> css3
 - js -> altjs? es2015
 - jquery -> ver 3.0
 
-- ogp
+- image resouce jpg,png,gif
+- document resource pdf
+
+
+- ogp tag
+
+- used foreign service
+	cdn - js common library
+	
 
 - google,yahoo adwords and analytics tag
  
+
+
 
 
 
