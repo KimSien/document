@@ -3,6 +3,9 @@
 
 # binary tree sort
 
+[reference](http://blog.quall.net/program/133/)
+
+
 ## check the precondition
 
 - if need the base array adjust sort program is scrach?
@@ -31,7 +34,50 @@ check devide front array > serch num?
 
 
 
-## code
+## code A
+
+<?php
+
+
+$serch=9;
+$arraylist = array(5,3,35,563,9,123,54,1,12,23,6,12);
+sort($arraylist);
+print_r($arraylist);
+
+binaryTree($serch,$arraylist) ? print("hit!") : print("not exist") ;
+
+
+/**
+* @return mixed true and false
+*/
+function binaryTree($serch,$arraylist){
+	
+	$low=0; $high=count($arraylist)-1;
+
+	while($low < $high){
+
+		$mid = ($low+$high) / 2;
+
+		if($arraylist[$mid] == $serch){
+			return true;
+		}
+
+		if($arraylist[$mid] < $serch){
+			$low = $mid +1;
+		}else{
+			$high = $mid;
+		}
+
+	}
+
+	return false;
+}
+
+?>
+
+
+
+## code B
 
 ```
 <?php
