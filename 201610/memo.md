@@ -1,292 +1,89 @@
 
-# index
 
 
-- 5 
-- 4 facade
-- 3 php general function
-- 2 quick sort
-- 1 insert sort
+# binary tree sort
 
+## check the precondition
 
------------------------------------------
+- if need the base array adjust sort program is scrach?
+- or touch array size is bigger?
 
-# design patterns test
-
-- please description of desing pattern with one sentence.
-- this case adjust the desing pattern?
+## memo
 
 
 
------------------------------------------
-# 6 
+serch num:5
+array liset 6,3,653,45,2,100,55
 
-- skill up target
+step 1
+sort array list
 
-need the speed
-growing comprehension ability
+step 2 
+enviroment while loop
+use low,high variable
 
-- try resolt
+step 3
+while check point of middle
 
-quality and quantity
-making tool. and tool master
+check devide front array > serch num?
 
-
-
-
-
-
-
------------------------------------------
-# 5 
-
-writing and imaging
-
-
-UML
-
-# for class diagram
-- aggregate,composit(car-)
-- dependency
-- generalization(extends)
-- realization(interface)
-
-
-# for use case
-- 
+	-> yes choise 
 
 
 
------------------------------------------
-# 4 facade
+## code
 
-
-[facade ](http://d.hatena.ne.jp/shimooka/20141215/1418620292)
-
-facade
-
-
-class item{}
-class orderitem{} +amount
-class order{}
-
-
-
-order->buyitem(orderitem)
-order->buyitemlist
-
-
-[hitori facade](http://qiita.com/t_ishida/items/e4aef9725f900bcb34ca)
-
-
-
------------------------------------------
-# 3 [php general function](http://trivial-contents.com/programming/php/library.html)
-
-
-
------------------------------------------
-# 2 quick sort
-
-point
-
-define pivot
-
-
-
-
------------------------------------------
-# 1 insert sort
-
-finaly. naming is insert. but replace number decrement array serch.
-
-step 1 moveing back array value.
-step 2 dont't moveing point check
-step 3 insert(?) temp value
-
-
+```
 <?php
 
-for($i=0; $i<$length; $i++){
-    
-    echo "*******************************************************".PHP_EOL;
-    echo $i . "回目".PHP_EOL;
-  $tmp = $arry[$i];
-  for($k=$i; $k>0 && $arry[$k-1] > $tmp; $k--){
-    $arry[$k] = $arry[$k-1];
-    echo "-inner------------------".PHP_EOL;
-    echo $k.PHP_EOL;
-    echo "tmp=".$tmp." arry[$k]".$arry[$k]." arry[$k-1]".$arry[$k-1];
-    echo PHP_EOL;
-    
-  }
-    echo "-outer------------------".PHP_EOL;
-    echo "k=".$k;
-    echo PHP_EOL;
-  
-  $arry[$k] = $tmp;
+class Search {
 
-?>
+    /*
+    * 二分探索を行う
+    *
+    * @return  探索値と一致する探索要素のキー、一致がなければNULL
+    */
+    function binarySearch($targetArr, $searchNum) {
 
- 
-*******************************************************
-0回目
--outer------------------
-k=0
-*******************************************************
-1回目
--inner------------------
-1
-tmp=2 arry[1]9 arry[1-1]9
--outer------------------
-k=0
-*******************************************************
-2回目
--inner------------------
-2
-tmp=8 arry[2]9 arry[2-1]9
--outer------------------
-k=1
-*******************************************************
-3回目
--inner------------------
-3
-tmp=3 arry[3]9 arry[3-1]9
--inner------------------
-2
-tmp=3 arry[2]8 arry[2-1]8
--outer------------------
-k=1
-*******************************************************
-4回目
--inner------------------
-4
-tmp=7 arry[4]9 arry[4-1]9
--inner------------------
-3
-tmp=7 arry[3]8 arry[3-1]8
--outer------------------
-k=2
-*******************************************************
-5回目
--inner------------------
-5
-tmp=4 arry[5]9 arry[5-1]9
--inner------------------
-4
-tmp=4 arry[4]8 arry[4-1]8
--inner------------------
-3
-tmp=4 arry[3]7 arry[3-1]7
--outer------------------
-k=2
-*******************************************************
-6回目
--inner------------------
-6
-tmp=6 arry[6]9 arry[6-1]9
--inner------------------
-5
-tmp=6 arry[5]8 arry[5-1]8
--inner------------------
-4
-tmp=6 arry[4]7 arry[4-1]7
--outer------------------
-k=3
-*******************************************************
-7回目
--inner------------------
-7
-tmp=5 arry[7]9 arry[7-1]9
--inner------------------
-6
-tmp=5 arry[6]8 arry[6-1]8
--inner------------------
-5
-tmp=5 arry[5]7 arry[5-1]7
--inner------------------
-4
-tmp=5 arry[4]6 arry[4-1]6
--outer------------------
-k=3
-*******************************************************
-8回目
--inner------------------
-8
-tmp=1 arry[8]9 arry[8-1]9
--inner------------------
-7
-tmp=1 arry[7]8 arry[7-1]8
--inner------------------
-6
-tmp=1 arry[6]7 arry[6-1]7
--inner------------------
-5
-tmp=1 arry[5]6 arry[5-1]6
--inner------------------
-4
-tmp=1 arry[4]5 arry[4-1]5
--inner------------------
-3
-tmp=1 arry[3]4 arry[3-1]4
--inner------------------
-2
-tmp=1 arry[2]3 arry[2-1]3
--inner------------------
-1
-tmp=1 arry[1]2 arry[1-1]2
--outer------------------
-k=0
-------
-123456789
-SumoMe
+        $low       = 0;
+        $high      = count($targetArr) -1;
 
---------------------------------------------------------------
+        while ($low < $high) {
+
+            $mid = ($low + $high) / 2;
+
+            if ($targetArr[$mid] == $searchNum) {
+                return $mid;
+            }
+
+            if ($targetArr[$mid] < $searchNum) {
+                $low  = $mid + 1;
+            } else {
+                $high = $mid;
+            }
+        }
+
+        return NULL;
+    }
+}
+
+    //検索値
+    $searchNum    = 5;
+
+    //検索対象要素
+    $targetArr    = array(38, 72, 93, 41, 5, 18, 35, 86, 49, 17, 73, 782, 190);
+    sort($targetArr);
+
+    $mid = Search::binarySearch($targetArr, $searchNum);
+
+    if ($mid === NULL) {
+        echo "探索の該当はありません";
+    } else {
+        echo "探索結果は".$targetArr[$mid]."です";
+    }
+
+```
 
 
-1章 デザインパターンの世界へようこそ
-デザインパターンって何？
-デザインパターンとは？
-オブジェクト指向
-GoFパターン
-デザインパターンのメリット・デメリット
-デザインパターンを使うメリット
-デザインパターンを使うデメリット
-PHPとオブジェクト指向
-PHPとは？
-PHP5でのオブジェクト指向開発
-2章 環境設定
-本書で対象とする環境
-Apache HTTP Serverのインストール
-PHP5のインストール
-3章 予備知識
-UMLについて
-クラス図
-シーケンス図
-4章 GoFデザインパターン ～STEP1：まずはここから
-TemplateMethod ～処理を穴埋めする
-Singleton ～いくつ作るかを制限する
-Adapter ～APIを変更する
-5章 GoFデザインパターン～STEP2：少し慣れたら
-Factory Method ～生成処理と使用処理を分離する
-Façade ～シンプルな唯一の窓口
-Iterator ～順々にアクセスする
-6章 GoFデザインパターン～STEP3：どんどん使ってみよう
-Abstract Factory ～関連する部品をまとめて作る工場
-Bridge ～実装と機能の架け橋
-Builder ～生成の手順と手段を分離する
-Chain of Responsibility ～処理のたらい回し
-Command ～要求をクラスで表す
-Composite ～木構造を表す
-Decorator ～かぶせて機能UP
-Flyweight ～同じものは一度しか作らない
-Interpreter ～言語の文法表現を通訳する
-Mediator ～すべては相談役が知っている
-Memento ～スナップショットを取る
-Observer ～状態変化を通知する
-Prototype ～コピーして作る
-Proxy ～具体的な実装を隠す身代わり
-State ～状態を表す
-Strategy ～戦略を切り替える
-Visitor ～要素と要素に対する操作を分離する
+
 

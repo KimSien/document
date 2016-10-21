@@ -24,7 +24,7 @@
 ## request develop spec & status
 - https
 - mobile experience 90 upper
-- site speed 50/60
+- site speed 40/50
 - 
 
 ## base technology
@@ -52,6 +52,33 @@
 
 
 
+
+
+-------------------
+mob / pc
+25 /  4 toysking http://www.toysking.jp/
+28 / 14 realclothes http://www.realclothes.jp/index.html
+14 / 16 littlecage https://www.little-cage.net/
+20 / 37 sazan http://www.southern-cross.jpn.com/
+37 / 60 sazan clomeharts http://ch.brand-kaitori.info/
+
+- oote
+46 / 39 komehyou http://www.komehyo.co.jp/
+37 / 48 bookoff http://www.bookoff.co.jp/
+25 / 36 kaitoriouji http://www.kaitoriouji.jp/
+
+- small?
+43 / 46 freestyle(komaki kaitori) http://fs-hobby.jp/
+54 / 7 arcadia https://kaitori-arcadia.com/
+
+- 
+57 / 63 livedoor http://www.livedoor.com/
+64 / 76 yahoo http://www.yahoo.co.jp/
+100/100 https://www.google.co.jp/
+
+63 / 72 cookpad http://cookpad.com/
+
+53　/ 53 zozotown http://zozo.jp/
 
 
 
