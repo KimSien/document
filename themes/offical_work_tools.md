@@ -2,15 +2,21 @@
 
 # index
 - 0 xampp (for php7.0)
-- 1 vs code
-
+- 1 vs code for php
+- 2 setting vs code for css
 
 - 0 -1 for php 
 
-- 0-1-0 VS CODE setting php
-- 0-1-1 PHP-DEBUG plugin
-- 0-1-2 PHP 
+- 1-1-0 VS CODE setting php
+- 1-1-1 PHP-DEBUG plugin
 
+- 1-1-2 
+PHP Code Format
+php CS - static code checker with psr?
+etc
+
+
+- 
 
 
 --------------------------------
@@ -20,7 +26,7 @@
 
 
 -------------
-# 1 setting vs code
+# 1 setting vs code for php
 
 first impression! 
 
@@ -36,13 +42,30 @@ before setting
 - before install xampp file. php path for windows  is C:\xampp\php
 
 
+--------------
+# 2 setting vs code for css
+
+
+
+
+
 
 -------------
 # 0-1 for php
 
-php
+## defalt php? setting.
 
-0-1-0 VS CODE setting php
+- Ctrl+space bottom select 
+code intelijense?
+
+- Saving file. after check syntax php.
+erro under red wave line pick up!
+
+
+
+
+-----------------
+## 1-1-0 VS CODE setting php
 
 [X](https://officeyuai.net/%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E9%96%8B%E7%99%BA/vscodewithphpsetting/)
 
@@ -66,8 +89,8 @@ c:/ <- ok
 
 
 
-
-0-1-1 PHP-DEBUG plugin
+-----------------
+## 1-1-1 PHP-DEBUG plugin
 
 - prepare xdebug activate
 
