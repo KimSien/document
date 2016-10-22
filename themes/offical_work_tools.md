@@ -22,6 +22,19 @@ etc
 --------------------------------
 # 0 xampp (for php7.0)
 
+- win xampp
+
+- mac mampp
+
+- mac homebrew
+
+[mac homebrew php7](http://qiita.com/Arashi/items/42d6f6e40d7d48891fc9)
+[mac homebrew xdebug](http://stackoverflow.com/questions/32291215/how-to-setup-x-debug-for-php7-on-mac)
+
+
+
+
+
 
 
 
@@ -45,6 +58,74 @@ before setting
 --------------
 # 2 setting vs code for css
 
+
+
+## 2-1 SASS
+
+### 2-1-1 prepare cli 
+
+[vs code for sass compile](http://celtislab.net/archives/20160303/vscode-node-sass/)
+
+[no ruby sass compile](http://celtislab.net/archives/20160302/node-sass-cl/)
+
+
+manifacture convert
+->
+	node-sass ***origin.sass **convert.css
+
+
+auto wath
+->
+	node-sass -w ***origin.sass **convert.css
+
+and more source-map and compressed
+->
+	node-sass --source-map true --output-style compressed  test.sass test.css
+
+
+
+
+### 2-1-2 vscode in sass
+
+shift+ctrl+B task run
+
+'''
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+    "command": "node-sass",
+    "isShellCommand": true,
+    "args": ["test.sass", "test.css"],
+    "showOutput": "always"
+}
+'''
+
+any task setup ok
+
+gulp? grunt?
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 2-2 LESS
+
+Easy LESS
+
+	it is easy
+
+	[tutorial](http://www.webopixel.net/html-css/503.html)
+
+	but not variable? - ok 
 
 
 
@@ -91,6 +172,56 @@ c:/ <- ok
 
 -----------------
 ## 1-1-1 PHP-DEBUG plugin
+
+## 1-1-1-1 mac xdebug
+
+- mac xdebug
+
+brew install php70-xdebug
+
+/usr/local/etc/php/7.0/php.ini
+
+mac
+```
+[XDebug]
+//zend_extension=""
+xdebug.remote_host = 127.0.0.1
+xdebug.remote_autostart=1
+xdebug.remote_enable=1
+xdebug.remote_handler = "dbgp"
+xdebug.remote_port = 9000
+```
+
+and
+setting lunch.json(vs code setting)
+```
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Listen for XDebug",
+            "type": "php",
+            "request": "launch",
+            "port": 9000,
+            "stopOnEntry":true,
+            "serverSourceRoot": "/Users/toysking/testphp/",
+            "localSourceRoot": "${workspaceRoot}"
+        },
+        {
+            "name": "Launch currently open script",
+            "type": "php",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${fileDirname}",
+            "port": 9000
+        }
+    ]
+}
+
+```
+
+## 1-1-1-2 windows xdebug
 
 - prepare xdebug activate
 
