@@ -6,6 +6,9 @@
 - 0 xampp (for php7.0)
 - 1 vs code for php
 - 2 setting vs code for css
+- 3 setting vs code for js
+
+- 4 other node. resource compression
 
 - 0 -1 for php 
 
