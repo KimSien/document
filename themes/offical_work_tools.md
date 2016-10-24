@@ -1,6 +1,8 @@
 # offical work tools
 
 # index
+- * best choice
+
 - 0 xampp (for php7.0)
 - 1 vs code for php
 - 2 setting vs code for css
@@ -17,6 +19,13 @@ etc
 
 
 - 
+
+--------------------------------
+# * best choice
+
+! not programer
+- css -> less + plugin(EASY LESS)
+- php -> 
 
 
 --------------------------------
