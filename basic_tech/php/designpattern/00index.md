@@ -16,7 +16,7 @@
 [-] 03 template
 [] 04 adapter
 [] 05 facade
-
+[] 06 factorymethod
 
 ---------------
 

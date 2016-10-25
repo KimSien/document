@@ -12,9 +12,36 @@ state,ChainOfRepository,cmoposite,mediator,Memento,Interpretor
 # Q3 please to descrbe design pattern in 20 characters.
 
 
+# Q4 where whether to X? method,property,flow,construction　・・・・
+
+
+```
+<?php
+
+interface base
+{
+    public function test();    
+}
+
+class baseA implements base
+{
+
+    function test(){
+        echo "test";
+    }
+    
+}
+
+$base = new baseA();
+$base->test();
+?>
+
+```
 
 
 
+
+```
 
 
 
@@ -31,7 +58,6 @@ state,ChainOfRepository,cmoposite,mediator,Memento,Interpretor
 # A1
 
 # A2
-
 
 # A3
 
