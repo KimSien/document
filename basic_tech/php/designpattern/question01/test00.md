@@ -14,6 +14,8 @@ state,ChainOfRepository,cmoposite,mediator,Memento,Interpretor
 
 # Q4 where whether to X? method,property,flow,construction　・・・・
 
+this basic code change.
+please 5 design patterns
 
 ```
 <?php
@@ -40,8 +42,6 @@ $base->test();
 
 
 
-
-```
 
 
 

@@ -17,6 +17,7 @@
 [] 04 adapter
 [] 05 facade
 [] 06 factorymethod
+[] 07 
 
 ---------------
 

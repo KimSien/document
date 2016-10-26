@@ -5,13 +5,15 @@
 
 
 abstract class Base{
+    
     public $datas="base";
+
     function set(Base $base){
         echo $this->datas;
         echo "から";
         echo $base->datas;
         echo "へ".PHP_EOL;
-        return $this;
+        return $base;
     }
 }
 
@@ -42,3 +44,9 @@ $a->set($b)->set($c);
 
 ?>
 
+
+----------------------
+result
+
+aaからbbへ
+bbからccへ
