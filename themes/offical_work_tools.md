@@ -20,6 +20,8 @@ PHP Code Format
 php CS - static code checker with psr?
 etc
 
+- 1-1-3 composer
+http://qiita.com/mikoski01/items/266469535e860312145d
 
 - 
 
