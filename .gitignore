@@ -2,3 +2,9 @@
 
 /node_modules/
 /testbabel/node_modules
+
+# win
+
+# mac
+.DS_Store
+
