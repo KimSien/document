@@ -1,4 +1,4 @@
-# Foundation Document
+# Foundation Document 
 
     foundation is css framework. current ver 6.
     
@@ -19,7 +19,7 @@ setup pattern
 - 1 speed up the foundation constructing
 - 2 Q & A detail check and tutorials.
 - 3 thiking about foundation relation technology
-- 4 cheet
+- 4 cheet sheet lv 1 to 3
 
 ---------------
 
