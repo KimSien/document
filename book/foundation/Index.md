@@ -88,6 +88,16 @@ tag{
 ul is not attempt order. ol is attempt order.
 other list style
 
+
+- Q what class used expression to float and text-align
+- A 
+float-right,left,center
+text-right,left,center
+
+section float class & helper class
+
+
+
 ## QA grid
 
 basic foundation colum control
