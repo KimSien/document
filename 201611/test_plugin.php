@@ -2,24 +2,27 @@
 /**
 * plugin pattern. used chain method?
 */
-abstract class Gk{
-
+abstract class Gk
+{
     protected $data;
 
-    function __construct(){
-
+    public function __construct()
+    {
     }
 
-    function set_data($data){
+    public function set_data($data)
+    {
         $this->data = $data;
     }
 
-    function get_data(){
+    public function get_data()
+    {
         return $this->data;
     }
 
-    function view(){
-       echo $this->data;
+    public function view()
+    {
+        echo $this->data;
     }
 }
 
@@ -27,29 +30,31 @@ abstract class Gk{
 /**
 *
 */
-class Gk_t extends Gk{
-
+class Gk_t extends Gk
+{
     private $array;
 
-    function __construct(){
+    public function __construct()
+    {
         $this->set_data("--contnets--");
     }
 
-    function data_decorate($func){
+    public function data_decorate($func)
+    {
         $this->set_data(
-        call_user_func($func,$this->data)
+        call_user_func($func, $this->data)
         );
     }
 
-    function data_decorate_list($func,$order){
+    public function data_decorate_list($func, $order)
+    {
         
         //if(isset())
         $this->array[$order] = $func;
-
     }
 
-    function run(){
-        
+    public function run()
+    {
         ksort($this->array);
         foreach ($this->array as $value) {
             $this->data_decorate($value);
@@ -57,9 +62,7 @@ class Gk_t extends Gk{
 
         $this->view();
     }
-
 }
-
 
 
 
@@ -69,9 +72,9 @@ class Gk_t extends Gk{
 $Gk_t = new Gk_t();
 
 // pugin
-$Gk_t->data_decorate_list("settingset1",3);
-$Gk_t->data_decorate_list("settingset2",1);
-$Gk_t->data_decorate_list("settingset3",2);
+$Gk_t->data_decorate_list("settingset1", 3);
+$Gk_t->data_decorate_list("settingset2", 1);
+$Gk_t->data_decorate_list("settingset3", 2);
 
 //view
 $Gk_t->run();
@@ -80,18 +83,23 @@ $Gk_t->run();
 
 
 // callback plugin
-function settingset1($data){
+function settingset1($data)
+{
     return $data." test1 ";
 };
 
 
-function settingset2($data){
+function settingset2($data)
+{
     return $data." test2 ";
 };
 
-function settingset3($data){
+function settingset3($data)
+{
     $data = $data." 33333 ";
     return $data;
 };
 
+echo 1;
 
+echo 33;
