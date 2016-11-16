@@ -17,7 +17,7 @@ php cording recommendations. psr series.
 
 
 # Index
-
+- 0 develop enviroment setting
 - 1 speed up constructing
 - 2 Q & A detail check and tutorials.
 - 3 thiking relation technology
@@ -26,7 +26,10 @@ php cording recommendations. psr series.
 - 6 other link. framework,integration development
 
 ----------------------
-
+# 0 develop enviroment setting
+- php version
+- xdebug
+- composer
 ----------------------
 # 1 speed up constructing
 
@@ -51,6 +54,8 @@ vs code
 # 2 Q & A detail check and tutorials.
 
 # Index
+- enviroment
+- data structure / arraylist,linkedlist
 - method/closure
 - class
 - deploy
@@ -58,6 +63,26 @@ vs code
 - magic method
 - overload
 - namespace
+
+--------------------
+# enviroment
+
+- Q what remote debug setting xdebug?
+- A 
+apache setting or .httaccess
+and hit session start url
+--------------------
+## data structure / arraylist,linkedlist
+
+- Q where diffirence arraylist and linkedlist?
+- A 
+
+[diffirence list](http://qiita.com/BumpeiShimada/items/522798a380dc26c50a50)
+
+php 5.3 after default spl-> SplDoublyLinkedList.
+
+
+
 
 --------------------
 ## method/closure
