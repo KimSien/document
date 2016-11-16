@@ -9,7 +9,6 @@ abstract class Gk
     public function __construct()
     {
     }
-
     public function set_data($data)
     {
         $this->data = $data;
