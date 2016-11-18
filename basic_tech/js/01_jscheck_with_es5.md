@@ -1,27 +1,24 @@
 # js check do
 
-use this?
 
-use prototype?
+[js test](http://qiita.com/hifive/items/3ad9e6b9a9088f9cedab)
 
-hashtable?
+------------------------
 
-[undeclaration, undefine](http://so-zou.jp/web-app/tech/programming/javascript/grammar/variable/#no2)
-
-code refactoring
-
+- use this?
+- use prototype?
+- hashtable?
+- [undeclaration, undefine](http://so-zou.jp/web-app/tech/programming/javascript/grammar/variable/#no2)
+- code refactoring
 [moduel pattern](http://bashalog.c-brains.jp/14/03/24-171000.php)
 
+- host and native object
+- use document.write() ?
 
-host and native object
+- [js template ](http://codechord.com/2013/07/javascript_template_engine-mustache-handlebars-microtemplating/)
 
-use document.write() ?
-
-[js template ](http://codechord.com/2013/07/javascript_template_engine-mustache-handlebars-microtemplating/)
-
-where diffrent with document load event & ready event
-
-what use strict mode? and merit or demerit
+- where diffrent with document load event & ready event
+- what use strict mode? and merit or demerit
 
 
 

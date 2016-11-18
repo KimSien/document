@@ -121,8 +121,10 @@ http://tech.connehito.com/entry/2016/07/28/170858
 
 
 --------------------
-# reflaction
+# reflection
 
+Q what reflection?
+A 
 
 --------------------
 # magic method
