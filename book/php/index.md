@@ -2,6 +2,7 @@
 
 
 
+
 ## basic reference
 
 php manual
@@ -12,6 +13,10 @@ php the right way / origin github
 
 php cording recommendations. psr series.
 - [PHP-FIG](http://www.php-fig.org/)
+
+
+more deep
+- [php specifications](https://github.com/php/php-langspec)
 
 
 
@@ -56,6 +61,7 @@ vs code
 # Index
 - enviroment
 - data structure / arraylist,linkedlist
+- value,array
 - method/closure
 - class
 - deploy
@@ -63,6 +69,10 @@ vs code
 - magic method
 - overload
 - namespace
+- opacache
+- serialize
+- quick hash
+- php buffering of output
 
 --------------------
 # enviroment
@@ -81,6 +91,13 @@ and hit session start url
 
 php 5.3 after default spl-> SplDoublyLinkedList.
 
+
+--------------------
+## value,array
+
+Q general used value.
+
+Q get the property of value. and detect the type and ability?
 
 
 
@@ -143,6 +160,48 @@ Q namespace effective using case is psr-4. is this cording contract required wha
 A psr-4 php 5.3 after
 
 general old resorce programing php 5.2. this attach the psr-0.
+
+
+
+--------------------
+## opcache
+
+Q require general for php?
+A ver 5.5 after
+
+Q do you prepare this method?
+A php.ini enable setting for opcache
+
+[*](http://hamuhamuengineer.blogspot.jp/2014/02/opcache.html)
+
+Q rental server setting?
+A diffirence of several servers.
+
+
+-------------------
+## serialize
+
+! attension
+imposible serialize　with the origin method and class.
+
+serialize pattern more than better to json encord?
+
+-------------------
+## quick hash
+
+
+
+
+
+
+-------------------
+## php buffering of output
+
+
+
+
+
+
 
 
 
