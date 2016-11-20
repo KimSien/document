@@ -73,6 +73,7 @@ vs code
 - serialize
 - quick hash
 - php buffering of output
+- mysqli
 
 --------------------
 # enviroment
@@ -198,6 +199,11 @@ serialize pattern more than better to json encord?
 ## php buffering of output
 
 
+
+-------------------
+## mysqli
+
+php7 not support mysql module(until now used by php5.5)
 
 
 
