@@ -5,7 +5,6 @@
 abstract class Gk
 {
     protected $data;
-
     public function __construct()
     {
     }
