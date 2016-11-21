@@ -257,6 +257,13 @@ add upon cord to php.ini. but not running xdebug?
 you try change php\ext\php_xdegub.dll(32bit) s
 
 
+! attenstion !
+    php versionに合わせて
+    変える必要あり
+    php 7.08cliでは
+    php_xdebug-2.4.0rc1-7.0-vc14.dll
+
+
 
 
 - create xampp htdoc file in vsfolder(project)

@@ -75,6 +75,9 @@ vs code
 - php buffering of output
 - mysqli
 
+- [sub] composer with psr-4
+- [sub] xdebug
+
 --------------------
 # enviroment
 
