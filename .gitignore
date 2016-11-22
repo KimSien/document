@@ -1,8 +1,13 @@
 # direcotry
-
 /node_modules/
 /testbabel/node_modules
 /test/
+/docs/
+
+# composer
+composer.json
+composer.lock
+/vendor/
 
 # win
 
