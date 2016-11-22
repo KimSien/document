@@ -74,6 +74,7 @@ vs code
 - quick hash
 - php buffering of output
 - mysqli
+- stdClass
 
 - [sub] composer with psr-4
 - [sub] xdebug
@@ -213,6 +214,10 @@ php7 not support mysql module(until now used by php5.5)
 
 
 
+-------------------
+## stdClass
+
+Q what a stdClass?
 
 
 
