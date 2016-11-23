@@ -75,6 +75,7 @@ vs code
 - php buffering of output
 - mysqli
 - stdClass
+- memo
 
 - [sub] composer with psr-4
 - [sub] xdebug
@@ -219,6 +220,11 @@ php7 not support mysql module(until now used by php5.5)
 
 Q what a stdClass?
 
+
+-------------------
+## memo
+
+Q what mean instanceof,get_class,is_a?
 
 
 
