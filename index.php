@@ -54,3 +54,6 @@ while($expire > 0){
     echo '賞味期限:'.$expire . '日 価格：'.$prd->getPrice().'<br>';
     $expire = $prd->decrementExpire();
 }
+
+
+echo test;
