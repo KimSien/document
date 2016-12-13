@@ -20,6 +20,11 @@ http://qiita.com/negabaro/items/41bc0b27eeeb023297e3
 
     normal hello. only run python.
 
+# 2 image recognitions
+
+
+http://qiita.com/negabaro/items/6aeb68befbe4b40b7049
+
 
 
 
