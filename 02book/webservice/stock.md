@@ -3,15 +3,19 @@
 # add 201612
 
 
-- project management [*]
+## プロジェクト管理ツール project management
 
-http://mmth.pro/
-
-this is not recommend
+- [マンモスプロジェクト](http://mmth.pro/)
 
 
-- free booking service[***]
+マンモスプロジェクトは、プロジェクトの成功に必要な「計画」・「状況確認」・「情報共有」の3つのプロセスをできるだけ簡単にして、誰でもストレスフリーで作業そのものに集中できるようにすることを目的に作られたツールです。
 
-https://coubic.com/?hl=ja
 
+
+
+## フリー予約システム free booking service
+
+- [クーピック](https://coubic.com/?hl=ja)
+
+クラウド型ネット予約システム & 顧客管理 Coubic (クービック)
 
